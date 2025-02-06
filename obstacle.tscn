@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcve0khdcfpr4"]
+
+[ext_resource type="Texture2D" uid="uid://phqq6x8vvn1k" path="res://assets/images/Obstacle.png" id="1_6uf1p"]
+
+[node name="Obstacle" type="Area2D" groups=["DynamicObject"]]
+scale = Vector2(1.5, 1.5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-53, -118, 53, -118, 46, -59, 40, -55, 32, 15, 27, 16, 15, 118, 9, 118, -16, -3, -25, -12)
+
+[node name="Model" type="Sprite2D" parent="."]
+texture = ExtResource("1_6uf1p")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-0.333334, -0.333328)
+scale = Vector2(5.36667, 11.9667)
